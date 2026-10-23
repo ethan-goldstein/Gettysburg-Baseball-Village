@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Gettysburg Baseball Village badge">
+  <defs>
+    <clipPath id="gbv-inner"><circle cx="100" cy="100" r="60"/></clipPath>
+    <path id="gbv-arc-top" d="M30.5 100a69.5 69.5 0 0 1 139 0"/>
+    <path id="gbv-arc-bottom" d="M19 100a81 81 0 0 0 162 0"/>
+    <path id="gbv-star" d="M0-5l1.23 3.3 3.53.15L2 .65l.94 3.4L0 2.1l-2.94 1.95.94-3.4-2.76-2.2 3.53-.15z"/>
+    <path id="gbv-bat" d="M-1.8 56V14c0-20-3.4-44-3.4-64 0-6 10.4-6 10.4 0 0 20-3.4 44-3.4 64v42z"/>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="#0B2545"/>
+  <circle cx="100" cy="100" r="91" fill="none" stroke="#F47E27" stroke-width="2"/>
+  <circle cx="100" cy="100" r="61" fill="#F7F3EA"/>
+  <g clip-path="url(#gbv-inner)">
+    <g fill="#0B2545">
+      <g transform="translate(100 104) rotate(38)"><use href="#gbv-bat"/><ellipse cy="57" rx="3.6" ry="2.2"/></g>
+      <g transform="translate(100 104) rotate(-38)"><use href="#gbv-bat"/><ellipse cy="57" rx="3.6" ry="2.2"/></g>
+    </g>
+    <circle cx="100" cy="97" r="21" fill="#FFFDF8" stroke="#0B2545" stroke-width="2"/>
+    <g fill="none" stroke="#F47E27">
+      <path d="M87.5 80c7.5 10 7.5 24 0 34M112.5 80c-7.5 10-7.5 24 0 34" stroke-width="1.4"/>
+      <path d="M87.5 80c7.5 10 7.5 24 0 34M112.5 80c-7.5 10-7.5 24 0 34" stroke-width="4.6" stroke-dasharray="1.5 2.7"/>
+    </g>
+    <path fill="#3B6494" d="M38 126c20-14 40-16 60-8 18 7 34-10 64-4v56H38z"/>
+    <path fill="#0B2545" d="M38 140c24-12 48-12 70-2 18 8 34-6 54-4v36H38z"/>
+  </g>
+  <circle cx="100" cy="100" r="61" fill="none" stroke="#F47E27" stroke-width="2"/>
+  <g font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="700" fill="#F7F3EA" text-anchor="middle">
+    <text font-size="19" letter-spacing="3.2"><textPath href="#gbv-arc-top" startOffset="50%">GETTYSBURG</textPath></text>
+    <text font-size="15" letter-spacing="2.4"><textPath href="#gbv-arc-bottom" startOffset="50%">BASEBALL VILLAGE</textPath></text>
+  </g>
+  <g fill="#F47E27"><use href="#gbv-star" x="24" y="100"/><use href="#gbv-star" x="176" y="100"/></g>
+</svg>

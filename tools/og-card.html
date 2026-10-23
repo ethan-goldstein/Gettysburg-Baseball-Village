@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Source for og.jpg (1200x630 link-preview card). Not linked from the site.
+     Render: headless Chrome at 1200x630, then convert to JPG. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,600,30;1,9..144,400,100&display=swap" rel="stylesheet" />
+  <style>
+    html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+    body { position: relative; background: #071A33; color: #F7F3EA; font-family: 'Fraunces', Georgia, serif; }
+    .photo { position: absolute; inset: 0; background: url("../images/hero.webp") 50% 60% / cover no-repeat; }
+    .shade {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(90deg, rgba(7, 26, 51, .92) 0%, rgba(7, 26, 51, .7) 45%, rgba(7, 26, 51, .1) 80%),
+        linear-gradient(0deg, rgba(7, 26, 51, .55), transparent 40%);
+    }
+    .content { position: absolute; left: 80px; top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: center; }
+    .badge { width: 132px; height: 132px; margin-bottom: 26px; filter: drop-shadow(0 10px 24px rgba(0, 0, 0, .45)); }
+    .eyebrow { margin: 0 0 14px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 24px; letter-spacing: .22em; text-transform: uppercase; }
+    .eyebrow b { color: #F47E27; font-weight: 700; }
+    h1 { margin: 0; font-weight: 600; font-size: 92px; line-height: .95; letter-spacing: -.02em; font-variation-settings: "opsz" 144, "SOFT" 30; }
+    h1 em { display: block; font-style: italic; font-weight: 400; font-variation-settings: "opsz" 144, "SOFT" 100; }
+    .facts { margin-top: 30px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 24px; letter-spacing: .14em; text-transform: uppercase; color: rgba(247, 243, 234, .85); }
+    .facts span { color: #F47E27; margin: 0 14px; }
+  </style>
+</head>
+<body>
+  <div class="photo"></div>
+  <div class="shade"></div>
+  <div class="content">
+    <svg class="badge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" aria-hidden="true">
+  <defs>
+    <clipPath id="gbv-inner"><circle cx="100" cy="100" r="60"/></clipPath>
+    <path id="gbv-arc-top" d="M30.5 100a69.5 69.5 0 0 1 139 0"/>
+    <path id="gbv-arc-bottom" d="M19 100a81 81 0 0 0 162 0"/>
+    <path id="gbv-star" d="M0-5l1.23 3.3 3.53.15L2 .65l.94 3.4L0 2.1l-2.94 1.95.94-3.4-2.76-2.2 3.53-.15z"/>
+    <path id="gbv-bat" d="M-1.8 56V14c0-20-3.4-44-3.4-64 0-6 10.4-6 10.4 0 0 20-3.4 44-3.4 64v42z"/>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="#0B2545"/>
+  <circle cx="100" cy="100" r="91" fill="none" stroke="#F47E27" stroke-width="2"/>
+  <circle cx="100" cy="100" r="61" fill="#F7F3EA"/>
+  <g clip-path="url(#gbv-inner)">
+    <g fill="#0B2545">
+      <g transform="translate(100 104) rotate(38)"><use href="#gbv-bat"/><ellipse cy="57" rx="3.6" ry="2.2"/></g>
+      <g transform="translate(100 104) rotate(-38)"><use href="#gbv-bat"/><ellipse cy="57" rx="3.6" ry="2.2"/></g>
+    </g>
+    <circle cx="100" cy="97" r="21" fill="#FFFDF8" stroke="#0B2545" stroke-width="2"/>
+    <g fill="none" stroke="#F47E27">
+      <path d="M87.5 80c7.5 10 7.5 24 0 34M112.5 80c-7.5 10-7.5 24 0 34" stroke-width="1.4"/>
+      <path d="M87.5 80c7.5 10 7.5 24 0 34M112.5 80c-7.5 10-7.5 24 0 34" stroke-width="4.6" stroke-dasharray="1.5 2.7"/>
+    </g>
+    <path fill="#3B6494" d="M38 126c20-14 40-16 60-8 18 7 34-10 64-4v56H38z"/>
+    <path fill="#0B2545" d="M38 140c24-12 48-12 70-2 18 8 34-6 54-4v36H38z"/>
+  </g>
+  <circle cx="100" cy="100" r="61" fill="none" stroke="#F47E27" stroke-width="2"/>
+  <g font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="700" fill="#F7F3EA" text-anchor="middle">
+    <text font-size="19" letter-spacing="3.2"><textPath href="#gbv-arc-top" startOffset="50%">GETTYSBURG</textPath></text>
+    <text font-size="15" letter-spacing="2.4"><textPath href="#gbv-arc-bottom" startOffset="50%">BASEBALL VILLAGE</textPath></text>
+  </g>
+  <g fill="#F47E27"><use href="#gbv-star" x="24" y="100"/><use href="#gbv-star" x="176" y="100"/></g>
+</svg>
+    <p class="eyebrow"><b>Summer 2027</b> &nbsp;·&nbsp; Gettysburg, PA</p>
+    <h1>Gettysburg<em>Baseball Village</em></h1>
+    <div class="facts">8U–14U<span>•</span>5 tournament weekends<span>•</span>On-campus housing</div>
+  </div>
+</body>
+</html>
