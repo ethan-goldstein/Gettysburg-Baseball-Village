@@ -22,6 +22,10 @@ python3 -m http.server 5173
 | `CREDITS.md` | Source and license for every photo (also listed in the footer's "Photo credits") |
 | `tools/` | Source pages for `og.jpg` and the PNG icons; re-render with headless Chrome if the hero or logo changes |
 
+## Updating the live site
+
+Push to `main` and GitHub Pages republishes in about a minute. Browsers cache CSS/JS for 10 minutes, so after changing `css/styles.css` or `js/main.js`, bump the `?v=` number on their links in `index.html` (e.g. `styles.css?v=3` to `?v=4`) so visitors get the new version immediately.
+
 ## Design
 
 - **Colors:** navy `#0B2545`, cream `#F7F3EA`, paper `#FFFDF8`, orange `#F47E27` (accent only). Orange buttons use navy text for contrast; text links use burnt orange `#A84B0C`. All pairs pass WCAG AA.
