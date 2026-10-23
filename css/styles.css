@@ -21,10 +21,10 @@
   --sans: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --cond: 'Barlow Condensed', 'Arial Narrow', sans-serif;
 
-  --gutter: clamp(16px, 4.5vw, 80px);
-  --maxw: 1680px;
+  --gutter: clamp(16px, 4.5vw, 96px);
+  --maxw: 1800px;
   --radius: 16px;
-  --header-h: 84px;
+  --header-h: 5.25rem;
   --ease-out: cubic-bezier(.2, .7, .2, 1);
   --shadow-soft: 0 1px 2px rgba(11, 37, 69, .05), 0 12px 32px -12px rgba(11, 37, 69, .18);
 }
@@ -33,7 +33,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 html {
-  font-size: clamp(16px, calc(.55vw + 8px), 19px);
+  font-size: clamp(16px, calc(.94vw + 2.4px), 22px);
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
@@ -110,7 +110,7 @@ p { margin: 0 0 1em; }
   padding-inline: var(--gutter);
 }
 
-section[id], footer[id] { scroll-margin-top: 72px; }
+section[id], footer[id] { scroll-margin-top: calc(4.25rem + 4px); }
 
 /* ---------- Type helpers ---------- */
 .eyebrow {
@@ -264,7 +264,7 @@ section[id], footer[id] { scroll-margin-top: 72px; }
   height: var(--header-h);
   transition: height .35s var(--ease-out);
 }
-.is-scrolled .header-inner { height: 68px; }
+.is-scrolled .header-inner { height: 4.25rem; }
 
 .brand {
   display: flex;
@@ -275,13 +275,13 @@ section[id], footer[id] { scroll-margin-top: 72px; }
   margin-right: auto;
 }
 .brand-badge {
-  width: 56px; height: 56px;
+  width: 3.5rem; height: 3.5rem;
   flex: none;
   filter: drop-shadow(0 4px 10px rgba(0, 0, 0, .3));
   transition: width .35s var(--ease-out), height .35s var(--ease-out), transform .6s var(--ease-out);
 }
 .brand:hover .brand-badge { transform: rotate(-10deg); }
-.is-scrolled .brand-badge { width: 46px; height: 46px; }
+.is-scrolled .brand-badge { width: 2.875rem; height: 2.875rem; }
 .brand-text { display: flex; flex-direction: column; line-height: 1; }
 .brand-name {
   font-family: var(--serif);
